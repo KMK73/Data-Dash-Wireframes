@@ -1,11 +1,5 @@
 // Morris.js Charts sample data for SB Admin template
-
-$(function() {
-
-    // Area Chart
-    Morris.Area({
-        element: 'morris-area-chart',
-        data: [{
+var myData = [{
             period: '2010 Q1',
             iphone: 2666,
             ipad: null,
@@ -55,7 +49,14 @@ $(function() {
             iphone: 8432,
             ipad: 5713,
             itouch: 1791
-        }],
+        }];
+
+$(function() {
+
+    // Area Chart
+    Morris.Area({
+        element: 'morris-area-chart',
+        data: myData,
         xkey: 'period',
         ykeys: ['iphone', 'ipad', 'itouch'],
         labels: ['iPhone', 'iPad', 'iPod Touch'],
