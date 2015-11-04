@@ -25,12 +25,3 @@ Styles added on from bootstrap default and sb-admin css
     height: 347px;
 }
 
-#avg-body {
-  position: relative;
-}
-#avg-body div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
