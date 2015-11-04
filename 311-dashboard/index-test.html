@@ -86,7 +86,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-recycle"></i> Waste Management</a>
+                        <a href="index-test.html"><i class="fa fa-recycle"></i> Waste Management</a>
                     </li>
                     <li>
                         <a href="public-works.html"><i class="fa fa-road"></i> Public Works</a>
@@ -138,7 +138,7 @@
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">All Districts</a></li>
                               </ul>
-                            </div> <span>Waste Management</span>
+                            </div> <span>Animal Services</span>
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
@@ -149,131 +149,75 @@
                 </div>
                 <!-- /.row -->
 
-                <!-- OVERALL row start -->
+                <!-- OVERALL container fluid row start -->
                 <div class="row">
-                    <!--start DATA STORIES panels -->
-                    <div class="col-lg-4 col-md-6" id="dash-container">
-                        <div class="panel panel-green" id="dash-content">
-                            <div class="panel-heading">
-                                <div class="row">
+                    <!--start DATA STORIES row panels -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="data-stories col-lg-6">
+                                <h4>Data Stories</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'd</p>
+                            </div>
+                            <div class="data-stories col-lg-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'dLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end data stories row -->
+
+                    <!--start AVG DAYS/METHOD RECEIVED row panels -->
+                    <div class="row">
+                        <!-- average days start div -->
+                        <div class="col-sm-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Average Days of Completion</h3>
                                     <div class="panel-body">
-                                        <h4>Data Stories</h4>
-                                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum                                          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem                                        ipsum Lorem ipsum</p>
+                                        <h2>5</h2>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">5 Days</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
+                        </div> <!-- average days end -->
+                        
+                        <!-- method received chart start div -->
+                        <div class="col-sm-8">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Method Received</h3>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--start OPEN/OVERDUE TICKETS panels -->
-                    <div class="col-lg-4 col-md-6" id="dash-container">
-                        <div class="panel panel-green" id="dash-content">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-ticket fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge"> 15</div>
-                                        <div>Open Tickets!</div>
-                                    </div>
+                                <div class="panel-body">
+                                    <div id="morris-line-chart"></div>
                                 </div>
                             </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
                         </div>
+
+
                     </div>
-                    <div class="col-lg-4 col-md-6" id="dash-container">
-                        <div class="panel panel-red" id="dash-content">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-ticket fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">1250</div>
-                                        <div>Overdue Tickets</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--   end quarter panels/.row-->
+
+                    <!-- /.container-fluid -->
                 </div>
-                <div class="row">
-                    <!-- row start METHOD RECEIVED charts -->
-                    <div class="col-sm-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Method Received</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-lg-12 col-md-3">
-                                    <div class="panel panel-default">
-                                    </div>
-                                </div>
-                                <div id="morris-area-chart-method"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--   Method received row end-->
-            <!-- row start MAIN MAP chart -->
-            <div class="row">
-                    <!-- row start most requested bar chart -->
-                    <div class="col-sm-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Most Requested</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-lg-12 col-md-3">
-                                    <div class="panel panel-default">
-                                    </div>
-                                </div>
-                                <div id="morris-bar-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-            <!-- END most requested  /.row -->
-            <!-- /.container-fluid -->
             </div>
+            <!-- /#page-wrapper -->
+
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /#wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Morris Charts JavaScript -->
+        <script src="js/plugins/morris/raphael.min.js"></script>
+        <script src="js/plugins/morris/morris.min.js"></script>
+        <script src="js/plugins/morris/morris-data.js"></script>
+        <script src="js/plugins/morris/area-data-method-received.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-    <script src="js/plugins/morris/area-data-method-received.js"></script>
-        
 </body>
 
 </html>
