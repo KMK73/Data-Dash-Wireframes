@@ -148,60 +148,140 @@
                     </div>
                 </div>
                 <!-- /.row -->
-
-                <!-- OVERALL container fluid row start -->
+                
+                <!--start DATA STORIES row panels -->
                 <div class="row">
-                    <!--start DATA STORIES row panels -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="data-stories col-lg-6">
-                                <h4>Data Stories</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'd</p>
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-book"></i> Data Stories</h3>
                             </div>
-                            <div class="data-stories col-lg-6">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'dLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'd</p>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'd</p>
                             </div>
                         </div>
                     </div>
-                    <!-- end data stories row -->
+                </div>
+                <!-- end data stories row -->
+                
+                <!-- START OF WEEK/MONTH/YEAR BUTTONS-->
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="time-filter col-sm-4 text-center">
+                            <button type="button" class="btn btn-lg btn-default">Week</button>
+                        </div>
+                        <div class="time-filter col-sm-4 text-center">
+                            <button type="button" class="btn btn-lg btn-default">Month</button>
+                        </div>
 
-                    <!--start AVG DAYS/METHOD RECEIVED row panels -->
-                    <div class="row">
-                        <!-- average days start div -->
-                        <div class="col-sm-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Average Days of Completion</h3>
-                                    <div class="panel-body">
-                                        <h2>5</h2>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">5 Days</span>
-                                            </div>
+                        <div class="time-filter col-sm-4 text-center">
+                            <button type="button" class="btn btn-lg btn-default">Year</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--start AVG DAYS/METHOD RECEIVED row panels -->
+                <div class="row">
+                    <!-- average days start div -->
+                    <div class="col-sm-4">
+                        <div id="avg-days" class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Average Days of Completion</h3>
+                            </div>
+                            <div id="avg-body" class="panel-body text-center">
+                                <div class="huge">5</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">5 Days</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- average days end -->
+
+                    <!-- method received chart start div -->
+                    <div class="col-sm-8">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Method Received</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-line-chart" class="method-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of avg days/method received row-->
+
+                <!-- OPEN/OVERDUE row start -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Open Tickets</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-8">
+                                    <div id="morris-line-chart-open"></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-yellow">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title text-center">Total</h3>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <h3>75</h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- average days end -->
-                        
-                        <!-- method received chart start div -->
-                        <div class="col-sm-8">
-                            <div class="panel panel-red">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Method Received</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Open Overdue Tickets</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-8">
+                                    <div id="morris-line-chart-overdue"></div>
                                 </div>
-                                <div class="panel-body">
-                                    <div id="morris-line-chart"></div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-yellow">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title text-center">Total</h3>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <h3>75</h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-                    <!-- /.container-fluid -->
                 </div>
+                <!-- end of open/overdue row-->
+
+                <!-- MOST REQUESTED ANIMAL SERVICES row start -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> MOST REQUESTED ANIMAL SERVICES</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  end row MOST REQUESTED ANIMAL SERVICES row END -->
+
+
             </div>
-            <!-- /#page-wrapper -->
+            <!-- /.container-fluid -->
+
 
         </div>
         <!-- /#wrapper -->
@@ -216,7 +296,9 @@
         <script src="js/plugins/morris/raphael.min.js"></script>
         <script src="js/plugins/morris/morris.min.js"></script>
         <script src="js/plugins/morris/morris-data.js"></script>
-        <script src="js/plugins/morris/area-data-method-received.js"></script>
+        <script src="js/plugins/morris/morris-line-open-tickets.js"></script>
+        <script src="js/plugins/morris/morris-line-overdue-tickets.js"></script>
+        <!--        <script src="js/plugins/morris/area-data-method-received.js"></script>-->
 
 </body>
 

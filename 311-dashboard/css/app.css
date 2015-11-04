@@ -4,13 +4,33 @@
 Styles added on from bootstrap default and sb-admin css 
 */
 
-/* Trying to make masonry look for top half of dashboard waste management page */
-#dash-container {
- display: inline-block;
-
+/*BUTTON FILTER */
+.time-filter {
+   padding-bottom: 15px; 
+}
+.time-filter button {
+    width:75%; /*button width */   
 }
 
-#dash-content {
- position:relative;
- display: block;
+/*METHOD RECEIVED CHART animal services */
+.method-chart {
+ 
+    height: 275px; 
+    
+}
+
+/*AVERAGE DAYS WIDGET animal services */
+#avg-days {
+    
+    height: 347px;
+}
+
+#avg-body {
+  position: relative;
+}
+#avg-body div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
