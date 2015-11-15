@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>311 Data Dash</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="client/css/bootstrap.min.css" rel="stylesheet">
@@ -146,129 +146,23 @@
                 </div>
                 <!-- /.row -->
 
-                <!--start DATA STORIES row panels -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-book"></i> Data Stories</h3>
-                            </div>
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra alsdflasjdfjasdfjasldfj'lasjd'fljasd'd</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end data stories row -->
-
-                <!-- START OF WEEK/MONTH/YEAR BUTTONS-->
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="time-filter col-sm-4 text-center">
-                            <button type="button" class="btn btn-lg btn-default">Week</button>
-                        </div>
-                        <div class="time-filter col-sm-4 text-center">
-                            <button type="button" class="btn btn-lg btn-default">Month</button>
-                        </div>
-
-                        <div class="time-filter col-sm-4 text-center">
-                            <button type="button" class="btn btn-lg btn-default">Year</button>
-                        </div>
-                    </div>
-
-                </div>
+                {{ > dataStories}} {{ > filters }}
 
                 <!--start AVG DAYS/METHOD RECEIVED row panels -->
                 <div class="row">
                     <!-- average days start div -->
-                    {{> avgDays}}
-                    <!-- average days end -->
-
-                    <!-- method received chart start div -->
-                    <div class="col-sm-8">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Method Received</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-line-chart" class="method-chart"></div>
-                            </div>
-                        </div>
-                    </div>
+                    {{> avgDays}} {{> methodReceived}}
                 </div>
-                <!-- end of avg days/method received row-->
-
                 <!-- OPEN/OVERDUE row start -->
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Open Tickets</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-sm-8">
-                                    <div id="morris-line-chart-open"></div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="panel panel-yellow">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title text-center">Total</h3>
-                                        </div>
-                                        <div class="panel-body text-center">
-                                            <h3>75</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Open Overdue Tickets</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-sm-8">
-                                    <div id="morris-line-chart-overdue"></div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="panel panel-yellow">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title text-center">Total</h3>
-                                        </div>
-                                        <div class="panel-body text-center">
-                                            <h3>75</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{> openTickets}} {{ > openOverdueTickets}}
                 </div>
-                <!-- end of open/overdue row-->
 
-                <!-- MOST REQUESTED ANIMAL SERVICES row start -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> MOST REQUESTED ANIMAL SERVICES</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-bar-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  end row MOST REQUESTED ANIMAL SERVICES row END -->
+                {{> mostRequested}}
 
 
-            </div>
-            <!-- /.container-fluid -->
-
-
-        </div>
-        <!-- /page #wrapper -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /page #wrapper -->
 
     </div>
     <!-- overall wrapper-->
