@@ -1,0 +1,27 @@
+/* CUSTOM Styles */
+
+/*
+Styles added on from bootstrap default and sb-admin css 
+*/
+
+/*BUTTON FILTER */
+.time-filter {
+   padding-bottom: 15px; 
+}
+.time-filter button {
+    width:75%; /*button width */   
+}
+
+/*METHOD RECEIVED CHART animal services */
+.method-chart {
+ 
+    height: 275px; 
+    
+}
+
+/*AVERAGE DAYS WIDGET animal services */
+#avg-days {
+    
+    height: 347px;
+}
+
