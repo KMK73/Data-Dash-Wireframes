@@ -1,4 +1,5 @@
 // Line Chart
+$(function() {
     Morris.Line({
         // ID of the element in which to draw the chart.
         element: 'morris-line-chart-overdue',
@@ -46,3 +47,4 @@
         smooth: false,
         resize: true
     });
+});
