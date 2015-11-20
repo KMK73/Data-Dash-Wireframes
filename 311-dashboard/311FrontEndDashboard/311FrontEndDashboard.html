@@ -7,13 +7,13 @@
     <meta name="author" content="">
 
     <title>311 Data Dash</title>
-    
-<!--     Custom CSS -->
-<!--    <link href="client/css/sb-admin.css" rel="stylesheet">-->
+
+    <!--     Custom CSS -->
+    <!--    <link href="client/css/sb-admin.css" rel="stylesheet">-->
 
 
     <!-- Custom DATA Dash CSS -->
-<!--    <link href="client/css/app.css" rel="stylesheet">-->
+    <!--    <link href="client/css/app.css" rel="stylesheet">-->
 
 
 </head>
@@ -130,18 +130,24 @@
                 {{ > filters }}
 
                 <!--MOST REQUESTED row panels -->
-                {{> mostRequested}}
-                {{> map }}
+                {{> mostRequested}} {{> map }}
                 <!-- OPEN/OVERDUE row start -->
                 <div class="row">
+                    <ol class="breadcrumb">
+                        <li class="">
+                            <h3>Ticket Type</h3>
+                        </li>
+                    </ol>
                     {{> openTickets}} {{ > openOverdueTickets}}
                 </div>
                 <!--METHOD RECEIVED row panels -->
                 {{> methodReceived}}
 
 
-            </div><!-- /.container-fluid -->
-        </div><!-- /page #wrapper -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /page #wrapper -->
 
     </div>
     <!-- overall wrapper-->
