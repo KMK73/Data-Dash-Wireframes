@@ -134,16 +134,14 @@
 
                 {{ > filters }}
 
-                <!--start AVG DAYS/METHOD RECEIVED row panels -->
-                <div class="row">
-                {{> methodReceived}}
-                </div>
+                <!--MOST REQUESTED row panels -->
+                {{> mostRequested}}
                 <!-- OPEN/OVERDUE row start -->
                 <div class="row">
                     {{> openTickets}} {{ > openOverdueTickets}}
                 </div>
-
-                {{> mostRequested}}
+                <!--METHOD RECEIVED row panels -->
+                {{> methodReceived}}
 
 
             </div><!-- /.container-fluid -->
