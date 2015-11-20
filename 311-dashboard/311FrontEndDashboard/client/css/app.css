@@ -25,3 +25,8 @@ Styles added on from bootstrap default and sb-admin css
     height: 347px;
 }
 
+/*map height*/
+  #map {
+    min-height: 350px;
+    min-width: 100%;
+  }
